@@ -1,0 +1,560 @@
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Open Sans"), url("");
+}
+
+
+@font-face {
+	font-family: "Sofia Sans Condensed";
+	font-style: normal;
+	font-weight: 400;
+	src: local("fonts/SofiaSansCondensed-Italic-VariableFont_wght.ttf"), url("");
+}
+
+
+.specfont {
+font-family: 'Old Standard TT', serif;
+animation: poj 1000ms linear 1000ms both;
+}
+
+@keyframes poj {
+	from {filter: opacity(0%);}
+	to {filter: opacity(100%);;
+	}
+}
+
+
+body {
+	background-color: green;
+	font-family: "Open Sans";
+}
+
+
+h1 {
+	color:#4a7927;
+	font-size: 40px;
+	margin: 0 0 10px;
+}
+
+
+*{margin: 0px;
+padding: 0px;}
+
+
+a {
+	text-transform: uppercase;
+	text-decoration: none; 
+	color: white;
+}
+
+div .boxter > a:nth-child(1) .box {
+	animation: lg 800ms linear 400ms both;
+}
+
+div .boxter > a:nth-child(2) .box {
+	animation: lg 800ms linear 500ms both;
+}
+
+div .boxter > a:nth-child(3) .box {
+	animation: lg 800ms linear 600ms both;
+}
+
+div .boxter > a:nth-child(4) .box {
+	animation: lg 800ms linear 700ms both;
+}
+
+
+
+.products .img:nth-child(1) {
+	animation: anmo 1000ms linear 400ms both;
+}
+
+.products .img:nth-child(2) {
+	animation: anmo 1000ms linear 500ms both;
+}
+.products .img:nth-child(3) {
+	animation: anmo 1000ms linear 600ms both;
+}
+
+
+
+@keyframes anmo {
+
+0% {filter: opacity(0%);}
+100%{filter: opacity(100%);} 		
+
+}
+
+
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  background-image: url("logo.png");
+  top: 0;
+  background-color: green;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+.imgsize {
+	height: 78%;
+    width: 80%;
+}
+.bgr {
+	background-image: url("");
+	background-size: 200%;
+	background-repeat: no-repeat;
+}
+
+.wbg {
+	border: 2px solid green;
+	background-color: green;
+	height: 30px;
+}
+.nav.wbg {
+	align-items: center;
+}
+
+.ftrmd {
+	flex-basis: 33%;
+}
+
+.fx {
+	display: flex;
+	justify-content: flex-end;
+	flex-basis: 90%;
+}
+
+
+
+.footer {
+	margin-top: 100px;
+}
+.yasarLogo {
+	width: 30%;
+}
+.copyright {
+	width: 30%;
+}
+
+.imagi {
+	display: flex;
+	flex-basis: 100%;
+	height: 300px;
+	justify-content: center;
+}
+
+.imagi img:hover {
+	transform: scale(1.1);
+}
+
+.milky {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 100px;
+	justify-content: center;
+}
+
+
+.shareLeft {
+	display: flex;
+	align-items: center;
+}
+
+.shareRight {
+	display: flex;
+}
+
+
+.pageShare {
+	display: flex;
+	height: 145px;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: #eef2ee;
+	margin-top: 40px;
+}
+
+
+.ftrright a:hover {
+	color: red;
+}
+
+
+.opisanie {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis:76%;
+}
+
+.copyright p {color: white; font-size: 13px;}
+.leftft {
+	display: flex;
+	flex-basis: 33%;
+}
+
+.ftr {
+	display: flex;
+	height: 140px;
+	width: 100%;
+	background-color: #356b03;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+.lang a:hover{
+	color: black;
+}
+
+.products .img a:after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.5);  opacity: 0; }
+
+.producst .img a:before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url(icon-path); opacity: 0; }
+
+.producst .img a:hover:before, .img a:hover:after {opacity: 1;}
+
+.boxy {
+	display: flex;
+	height: 500px;
+	justify-content: flex-end;
+    align-items: center;
+    margin-top: 5%	;
+}
+.boxter {
+	display: flex;
+	flex-basis: 50%;
+	flex-wrap: wrap;
+	justify-content: space-evenly
+}
+.box {
+	display: flex;
+	background-color: green;
+	width: 265px;
+	height: 195px;
+	margin: 10px 0px;
+	align-items: center;
+}
+
+
+
+.tbl {
+	margin: 50px 0px;
+}
+
+.box p {
+	color: white;
+}
+
+
+div.fx > .icons li a:hover {
+	color: black;
+}
+
+.icons {
+	display: flex;
+	width: 136px;
+	justify-content: space-evenly;
+	padding-top: 10px;
+}
+
+
+.cont {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	animation: lg 300ms linear 400ms both;
+}
+
+
+
+.carousel{display: flex; height: 500px; justify-content: center; align-items: center;}
+
+
+.boxter a:hover p {
+	color: black;
+}
+.bgrn {
+	background-color: green;
+	height: 7px;
+	width: 217px;
+}
+
+.products{
+	display: flex;
+	height: ;
+	width: ;
+	flex-wrap: wrap;
+}
+
+.img {
+	width: 32.3%;
+	position: relative;
+	border: 7px solid #096719;
+}
+
+.img:nth-child(2){
+	border: 7px solid #00b2ec;
+}
+.img:nth-child(3){
+	border: 7px solid #e11718;
+}
+
+.title1, .title2, .title3 {
+	position: absolute;
+	top: 19px;
+	color:#fff;
+	padding: 14px;
+	font-size: 25px;
+	margin: 10px;
+	right: 20px;
+	font-weight: bold;
+}
+
+.title1{
+	background-color: green;
+}
+.title2{
+	background-color: #00b2ec;
+}
+.title3{
+	background-color: red;
+}
+
+.imge {
+	width: 100%;
+	height: 100%;
+}
+.urn {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+}
+
+.urn h1 {
+	color: green;
+}
+
+@keyframes lg {
+	0% {filter: opacity(0%); transform: scale(0);}
+	50% {filter: opacity(50%); transform: scale(0.5);}
+	70%{filter: opacity(70%); transform: scale(1);}
+}
+
+.menu {
+	width: 100%;
+	animation: lg 500ms linear 400ms both;
+}
+.lang {
+	display: flex;
+	flex-basis: 12%;
+	justify-content: space-evenly;
+}
+
+.cs {
+	display: flex;
+	background-color: green;
+}
+
+ol, ul {list-style: none;}
+
+ul.nav a:hover {color: black;}
+
+ul.nav > li:hover ul.sub-menu{display: block; position: absolute; margin-top: 15px; left: 0px; min-width: 150px; max-width: 250px; padding-top: 20px; z-index: 5; margin: 0px auto;}
+
+ul.nav li {position: relative;}
+
+.nav{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+ul.sub-menu {
+	display: none;
+}
+
+.logo {
+	margin: 40px 0px;
+}
+.logo img {
+	opacity: 85%;
+}
+.logo img:hover {
+	opacity: 100%;
+
+}
+
+.burger, .off {display: none;}
+
+ul.nav li > ul.sub-menu li:nth-child(1) {animation: birds 400ms linear 300ms both;}
+ul.nav li > ul.sub-menu li:nth-child(2) {animation: birds 400ms linear 400ms both;}
+ul.nav li > ul.sub-menu li:nth-child(3) {animation: birds 400ms linear 500ms both;}
+ul.nav li > ul.sub-menu li:nth-child(4) {animation: birds 400ms linear 600ms both;}
+ul.nav li > ul.sub-menu li:nth-child(5) {animation: birds 400ms linear 700ms both;}
+ul.nav li > ul.sub-menu li:nth-child(6) {animation: birds 400ms linear 800ms both;}
+ul.nav li > ul.sub-menu li:nth-child(7) {animation: birds 400ms linear 900ms both;}
+ul.nav li > ul.sub-menu li:nth-child(8) {animation: birds 400ms linear 1000ms both;}
+ul.nav li > ul.sub-menu li:nth-child(9) {animation: birds 400ms linear 1100ms both;}
+ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms both;}
+
+
+.pht {height: 8000px;}
+
+
+@keyframes birds{
+	 
+	0%{transform: scale(0); filter: opacity(0%);}
+	70%{transform: scale(2); filter: opacity(70%);}
+}
+
+
+@media(max-width: 1200px) {
+	.cont {
+		width: 95%;
+	}
+}
+
+
+@media(max-width: 500px){
+	.wbg {
+		height: auto;
+	}
+
+	.boxy {
+		display: block;
+	}
+
+	.box {
+		width: 80%;
+		height: 195px;
+	}
+	.burger {
+		text-align: center;
+	}
+	ul.nav {
+		flex-direction: column;
+		text-align: center;
+	}
+	ul.nav li > ul.sub-menu li {
+		position: relative;
+	}
+	.burger #Nikita {display: none;}
+	.burger.OnOff #Mac {display: none;}
+	.burger.OnOff #Nikita {display: block;}
+	.menu {width: 100%; display: none;}
+	.off, .burger {display:block;}
+	ul.nav {justify-content: space-evenly;}
+	.off, .burger {display:block;}
+	.menu{display:none;}
+	.menu.on {display: block;
+	animation:slow-menu 2s both; height: auto;}
+	
+	.menu.on ul.nav, .menu.anime ul.nav {flex-direction: column;
+	text-align: center;}
+	ul.nav li > ul.sub-menu {
+		padding: 10px;
+	}
+
+	.menu.anime {animation:slow-menu 2s both; display: block;}
+
+@keyframes anime {
+	0%{transform: scale(1); filter: opacity(100%);}
+	50%{transform: scale(0.5); filter: opacity(50%);}
+	100%{transform: scale(0); filter: opacity(0%);}
+}
+
+
+
+	.cont {
+		flex-wrap: wrap;
+	}
+	
+	.menu.anime > ul.nav li:nth-child(1) {animation: birds 500ms linear 300ms both;}
+.menu.anime > ul.nav li:nth-child(2) {animation: birds 500ms linear 400ms both;}
+.menu.anime > ul.nav li:nth-child(3) {animation: birds 500ms linear 500ms both;}
+.menu.anime > ul.nav li:nth-child(4) {animation: birds 500ms linear 600ms both;}
+.menu.anime > ul.nav li:nth-child(5) {animation: birds 500ms linear 700ms both;}
+.menu.anime > ul.nav li:nth-child(6) {animation: birds 500ms linear 800ms both;}
+.menu.anime > ul.nav li:nth-child(7) {animation: birds 500ms linear 900ms both;}
+
+.menu.on.anime > ul.nav li:nth-child(7) {animation: anime 500ms linear 300ms both;}
+.menu.on.anime > ul.nav li:nth-child(6) {animation: anime 500ms linear 400ms both;}
+.menu.on.anime > ul.nav li:nth-child(5) {animation: anime 500ms linear 500ms both;}
+.menu.on.anime > ul.nav li:nth-child(4) {animation: anime 500ms linear 600ms both;}
+.menu.on.anime > ul.nav li:nth-child(3) {animation: anime 500ms linear 700ms both;}
+.menu.on.anime > ul.nav li:nth-child(2) {animation: anime 500ms linear 800ms both;}
+.menu.on.anime > ul.nav li:nth-child(1) {animation: anime 500ms linear 900ms both;}
+
+
+ul.nav > li:hover ul.sub-menu {position: relative;}
+
+.fx {justify-content: flex-start; width: 425px;};
+
+}
