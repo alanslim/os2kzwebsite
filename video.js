@@ -1,8 +1,7 @@
-var videoModal = document.getElementById("videoModal");
-var video = document.getElementById("video");
-var closeBtn = document.getElementById("closeBtn");
-var body = document.getElementById("body");
-
+let videoModal = document.getElementById("videoModal");
+let video = document.getElementById("video");
+let closeBtn = document.getElementById("closeBtn");
+let body = document.body;
 
 
 videoModal.style.display = "block";
