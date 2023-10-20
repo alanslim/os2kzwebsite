@@ -419,10 +419,6 @@ footer {
 
 }
 
-.boxx {
-
-}
-
 
 .boxx:nth-child(odd) {
 	animation: anmo 1000ms linear 400ms both;
@@ -599,10 +595,6 @@ div.fx > .icons li a:hover {
 
 h1 {
 	font-size: 3.0rem;
-}
-
-.tr a::after {
-	content: ;
 }
 
 .cont {
