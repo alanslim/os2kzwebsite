@@ -359,7 +359,7 @@ footer {
 	margin-top: 100px;
 }
 .yasarLogo {
-	width: 30%;
+	flex-basis: 50%;
 }
 
 .bran ul b {
@@ -434,6 +434,10 @@ footer {
 }
 
 .copyright p {color: black; font-size: 13px;}
+
+.copyright {
+	flex-basis: 60%;
+}
 
 .ftr {
 	display: flex;
