@@ -983,10 +983,17 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 }
 
 
+@media(min-width: 1000px){
+	#bigtext {
+		height: 1200px;
+	}
+}
+
 @media(max-width: 1200px) {
 	.cont {
 		width: 95%;
 	}
+
 }
 
 @media(max-width: 1116px) {
