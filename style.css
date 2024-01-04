@@ -327,7 +327,7 @@ div .boxter > a:nth-child(4) .box {
 
 .ftr {
 	display: flex;
-	height: 140px;
+	height: auto;
 	width: 100%;
 	background-color: #356b03;
 	align-items: center;
@@ -512,6 +512,7 @@ div.fx > .icons li a:hover {
 	display: flex;
 	justify-content: center;
 	animation: lg 300ms linear 400ms both;
+	margin: 20px 0px;
 }
 
 
@@ -648,9 +649,7 @@ ul.sub-menu {
 	display: none;
 }
 
-.logo {
-	margin: 40px 0px;
-}
+
 .logo img {
 	opacity: 85%;
 }
