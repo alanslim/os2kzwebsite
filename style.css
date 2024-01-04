@@ -301,9 +301,6 @@ div .boxter > a:nth-child(4) .box {
 
 }
 
-.boxx {
-
-}
 
 
 .boxx:nth-child(odd) {
@@ -353,6 +350,7 @@ div .boxter > a:nth-child(4) .box {
 	border-radius: 1.2rem;
 	overflow: hidden;
 	text-align: center;
+	border: 1px solid green;
 }
 
 #videoModal {
@@ -389,6 +387,7 @@ margin: 0 auto;
 .boxx img {
 	width: 60%;
 	height: 84%;
+	padding: 18px;
 }
 
 
