@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tamek/static/css/main.99663861.css",
-    "main.js": "/tamek/static/js/main.fca0158a.js",
+    "main.css": "/tamek/static/css/main.63604ee6.css",
+    "main.js": "/tamek/static/js/main.d33f73e4.js",
     "static/js/787.8a7ff9b8.chunk.js": "/tamek/static/js/787.8a7ff9b8.chunk.js",
     "static/media/bgr.jpg": "/tamek/static/media/bgr.d2d6071bc9073ef5bff5.jpg",
     "static/media/bgrforitems.jpg": "/tamek/static/media/bgrforitems.bcee71fb28a825aa4985.jpg",
     "index.html": "/tamek/index.html",
-    "main.99663861.css.map": "/tamek/static/css/main.99663861.css.map",
-    "main.fca0158a.js.map": "/tamek/static/js/main.fca0158a.js.map",
+    "main.63604ee6.css.map": "/tamek/static/css/main.63604ee6.css.map",
+    "main.d33f73e4.js.map": "/tamek/static/js/main.d33f73e4.js.map",
     "787.8a7ff9b8.chunk.js.map": "/tamek/static/js/787.8a7ff9b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99663861.css",
-    "static/js/main.fca0158a.js"
+    "static/css/main.63604ee6.css",
+    "static/js/main.d33f73e4.js"
   ]
 }
