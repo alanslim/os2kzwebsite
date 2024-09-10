@@ -13,7 +13,9 @@
 	src: local("fonts/SofiaSansCondensed-Italic-VariableFont_wght.ttf"), url("");
 }
 
-
+:root {
+	--resizer: 1440;
+  }
 
 .cont:nth-child(1) {
 	padding-top: 10px;
@@ -44,7 +46,7 @@ padding: 0px;}
 
 
 a {
-	text-transform: uppercase;
+
 	text-decoration: none; 
 	color: #e7e7e7;
 }
@@ -648,6 +650,115 @@ ul.sub-menu {
 	display: none;
 }
 
+.pict-container > img {
+	width: 245px;
+}
+
+.logo-harvest {
+	height: calc(100vw/var(--resizer) * 100);
+    margin-left: 50px;
+}
+
+.container-harvest {
+	margin-top: 135px;
+}
+.harvest-text{
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+
+
+.harvest-text-container p{
+	font-size: 18px;
+}
+
+.harvest-text-container {
+ flex-basis: 42%;
+}
+
+.site-header, .site-header nav {
+	background-color: inherit!important;
+}
+
+.burger-harvest {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.color-harvest {
+    color: #393636;
+}
+
+.gold-harvest {
+	font-family: "Open Sans";
+}
+
+.nav-harvest {
+	padding: 0px 15px;
+	display: flex;
+}
+
+.harvest-logo {
+	margin-top: 50px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.harvest-logo img {
+	height: calc(350vw/var(--resizer) *100);
+
+}
+
+.harvest-icons {
+	flex-basis: 44%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.harvest-icons a {
+	color: black;
+	padding: 10px;
+
+}
+
+.gold-harvest {
+	font-size: calc(15vw / var(--resizer) * 100)
+}
+.nav-harvest.burger {
+	display: none;
+  }
+
+.harvest-icons a:hover {
+	color: #00b2ec;
+}
+.footer-harvest a > img:hover {
+	scale: 1.1;
+	transition: 0.5s;
+}
+.harvest-h1 {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+.harvest-text {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+.harvest-h1.show {
+	animation: 1s forwards 1s  fadeIn;
+}
+.harvest-text.show{
+	animation: 2s forwards 2s  fadeIn;
+	
+}
+
+.footer-harvest {
+	background-color: aliceblue;
+}
 
 .logo img {
 	opacity: 85%;
@@ -672,6 +783,14 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 
 
 .pht {height: 8000px;}
+
+
+
+@keyframes fadeIn {
+	0%{opacity: 0;}
+
+	100%{opacity: 1;}
+}
 
 
 @keyframes birds{

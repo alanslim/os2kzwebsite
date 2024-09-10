@@ -3,8 +3,8 @@ $(function(){
 
 
 $(".prod1").hide();
-var activeVehicleData = $(".brand-nav .active a").attr("href");
-$(activeVehicleData).show(); 
+let activeBrandData = $(".brand-nav .active a").attr("href");
+$(activeBrandData).show(); 
 
 $(".brand-nav li").on("click", function(){
 
@@ -13,9 +13,9 @@ $(".brand-nav li").on("click", function(){
   $(this).addClass('active');
   $(this).find('span').addClass('bl');
 
-  $(activeVehicleData).fadeOut( "slow", function() {
-    activeVehicleData = $(".brand-nav .active a").attr("href");
-    $(activeVehicleData).fadeIn("slow", function() {});
+  $(activeBrandData).fadeOut( "slow", function() {
+    activeBrandData = $(".brand-nav .active a").attr("href");
+    $(activeBrandData).fadeIn("slow", function() {});
   });
 
   return false;
