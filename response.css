@@ -21,6 +21,16 @@
 }
 
 @media screen and (max-width: 600px) {
+  .harvest-slider-h2 {
+    margin-bottom: 0px !important;
+  }
+  #btn-table {
+    width: 86%!important;
+    font-size: 15px;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    display: none!important;
+  }
 
     .logo-harvest {
         height: 100px!important;

@@ -532,8 +532,6 @@ div.fx > .icons li a:hover {
 
 .products{
 	display: flex;
-	height: ;
-	width: ;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 
@@ -669,6 +667,25 @@ ul.sub-menu {
 	justify-content: space-around;
 }
 
+.harvest-table {
+	display: none;
+}
+
+
+#btn-table {
+	width: 25%;
+	padding: 15px;
+	background-color: white;
+	margin: 0 auto;
+	transition: 0.5s;
+}
+
+#btn-table:hover {
+	background-color: antiquewhite;
+
+}
+
+
 
 
 .harvest-text-container p{
@@ -790,6 +807,17 @@ ul.sub-menu {
 
 .swiper-slide a:hover >p {
 	color: gold;
+}
+
+.active-harvest {
+	display: block;
+	transition: 0.5s;
+}
+
+.table {
+	display: block;
+	width: 100%!important;
+	overflow: auto;
 }
 .swiper-image {
 	width: 250px;
