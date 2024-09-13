@@ -817,7 +817,7 @@ ul.sub-menu {
 }
 
 .swiper-slide a:hover >p {
-	color: gold;
+	color: rgb(255, 196, 0);
 }
 
 .active-harvest {
