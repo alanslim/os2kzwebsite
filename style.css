@@ -756,9 +756,51 @@ ul.sub-menu {
 	
 }
 
+.main-harvest {
+	min-height: 800px;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+.harvest-slider {
+	margin-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.harvest-slider-h2 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.swiper-slide a > p {
+	color: #000;
+	font-size: 13px;
+}
+
+.swiper-slide a:hover {
+	scale: 1.1;
+}
+
+.swiper-slide a:hover >p {
+	color: gold;
+}
+.swiper-image {
+	width: 250px;
+}
 .footer-harvest {
 	background-color: aliceblue;
 }
+.swiper {
+	width: 750px;
+	height: 350px;
+  }
 
 .logo img {
 	opacity: 85%;

@@ -12,7 +12,8 @@
 }
 
 @media screen and (max-width: 426px) {
-    .harvest-h1 {
+  
+    .harvest-h1, .harvest-swiper-h1 {
   
         font-size: 23px;
     }
@@ -25,7 +26,7 @@
         height: 100px!important;
     }
     
-  .harvest-h1 {
+  .harvest-h1, .harvest-swiper-h1 {
     text-align: center;
     font-size: 31px;
   }
