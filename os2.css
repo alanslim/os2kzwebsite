@@ -766,11 +766,12 @@ ul.brand-nav li {
 }
 
 .select-brand {
+	
 	border: 2px solid #efe9e9;
 	height: 43px;
 	position: relative;
 	width: 100%;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 }
 
 .specimg:nth-child(2){
