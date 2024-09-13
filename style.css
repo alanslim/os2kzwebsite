@@ -516,7 +516,29 @@ div.fx > .icons li a:hover {
 	margin: 20px 0px;
 }
 
+#btn-table-activate {
+	width: 25%;
+	padding: 15px;
+	background-color: white;
+	margin: 0 auto;
+	transition: 0.5s;
+	display: block;
+}
+#btn-table-inactivate {
+	width: 25%;
+	padding: 15px;
+	background-color: white;
+	margin: 0 auto;
+	transition: 0.5s;
+	display: none;
+}
 
+
+
+#btn-table-inactivate:hover, #btn-table-activate:hover {
+	background-color: antiquewhite;
+
+}
 
 .carousel{display: flex; height: 500px; justify-content: center; align-items: center;}
 
@@ -672,18 +694,7 @@ ul.sub-menu {
 }
 
 
-#btn-table {
-	width: 25%;
-	padding: 15px;
-	background-color: white;
-	margin: 0 auto;
-	transition: 0.5s;
-}
 
-#btn-table:hover {
-	background-color: antiquewhite;
-
-}
 
 
 

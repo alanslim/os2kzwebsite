@@ -38,14 +38,22 @@ const swiper = new Swiper('.swiper', {
     }
 });
 
-let btn = document.querySelector('#btn-table');
+let btnActive = document.querySelector('#btn-table-activate');
+let btnDeactive = document.querySelector('#btn-table-inactivate');
 
 let table = document.querySelector('.harvest-table');
 
-btn.addEventListener('click', () => {
-  if(table.classList.contains('active-harvest')){
-    table.classList.remove('active-harvest');
-  } else {
+btnActive.addEventListener('click', () => {
+
     table.classList.add('active-harvest');
-  }
-})
+    btnActive.style.display = "none";
+    btnDeactive.style.display = "block";
+  
+});
+btnDeactive.addEventListener('click', () => {
+
+    table.classList.remove('active-harvest');
+    btnActive.style.display = "block";
+    btnDeactive.style.display = "none";
+
+});
