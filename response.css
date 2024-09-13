@@ -24,7 +24,7 @@
   .harvest-slider-h2 {
     margin-bottom: 0px !important;
   }
-  #btn-table {
+  #btn-table-activate, #btn-table-deactivate {
     width: 86%!important;
     font-size: 15px;
   }
