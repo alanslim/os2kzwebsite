@@ -1058,6 +1058,10 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 
 @media(max-width: 768px) {
 
+	.cs {
+		justify-content: center;
+	}
+
 	.yasarLogo {
 		margin: 0 auto;
 	}
@@ -1076,6 +1080,10 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 }
 
 @media(max-width: 500px){
+
+	header {
+		width: 100%;
+	}
 	.logo {
 		display: none;
 	}
