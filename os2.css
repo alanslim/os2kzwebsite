@@ -618,6 +618,8 @@ h1 {
 	width: 50%;
 	margin: auto;
 	margin-top: 300px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .logo {
@@ -930,7 +932,7 @@ ul.sub-menu {
 }
 
 .logo {
-	margin: 40px 0px;
+	margin: 10px 0px;
 }
 .logo img {
 	opacity: 85%;
@@ -991,7 +993,7 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 
 @media(min-width: 1000px){
 	#bigtext {
-		height: 1200px;
+		height: 850px;
 	}
 }
 
