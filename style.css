@@ -489,6 +489,7 @@ margin: 0 auto;
 
 .box p {
 	color: white;
+	font-size: calc(16vw/var(--resizer)*100);
 }
 
 
