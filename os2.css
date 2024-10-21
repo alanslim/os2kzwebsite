@@ -13,6 +13,10 @@
 	src: local("fonts/SofiaSansCondensed-Italic-VariableFont_wght.ttf"), url("");
 }
 
+:root {
+	--resizer: 1440;
+  }
+
 .basis__header {
 	flex-basis: 87%;
 }
@@ -996,7 +1000,7 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 
 @media(min-width: 1000px){
 	#bigtext {
-		height: 850px;
+		height: calc(850vw / var(--resizer) * 100);
 	}
 }
 

@@ -25,6 +25,10 @@ animation: poj 1000ms linear 1000ms both;
 	}
 }
 
+:root {
+	--resizer: 1440;
+  }
+
 
 body {
 	background-color: green;
