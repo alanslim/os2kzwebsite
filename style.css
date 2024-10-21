@@ -906,6 +906,15 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 
 
 @media(max-width: 768px) {
+	.products1 {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+	.specimg {
+		position: relative;
+		width: 100%;
+		height: 300px;
+	}
 		.boxter {
 	flex-basis: 100%;
 }
