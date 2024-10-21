@@ -453,6 +453,9 @@ margin: 0 auto;
 
 .boxx a:hover:before, .boxx a:hover:after {opacity: 1;}
 
+.urn h1 {
+	font-size: calc(36vw/var(--resizer) * 100);
+}
 
 
 
@@ -460,8 +463,9 @@ margin: 0 auto;
 .boxy {
 	display: flex;
 	height: calc(500vw/var(--resizer) * 100);
-	justify-content: flex-end;
+	justify-content: center;
     align-items: center;
+	flex-wrap: wrap;
     margin-top: 5%	;
 }
 .boxter {
@@ -617,7 +621,6 @@ div.fx > .icons li a:hover {
 .urn {
 	display: flex;
 	flex-direction: column;
-	background-color: white;
 	height: 100px;
 	justify-content: center;
 	align-items: center;
@@ -636,6 +639,7 @@ div.fx > .icons li a:hover {
 .menu {
 	width: 100%;
 	animation: lg 500ms linear 400ms both;
+	height: 36px;
 }
 .lang {
 	display: flex;
