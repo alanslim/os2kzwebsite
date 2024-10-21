@@ -906,6 +906,9 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 
 
 @media(max-width: 768px) {
+	.urn h1 {
+		font-size: 35px;
+	}
 	.products1 {
         flex-wrap: wrap;
         margin-top: 10px;
