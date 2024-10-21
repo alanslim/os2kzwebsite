@@ -618,7 +618,7 @@ h1 {
 }
 
 .bigtext {
-	height: 668px;
+	height: calc(665vw / var(--resizer) * 100);
 }
 
 .tr {
@@ -840,7 +840,7 @@ ul.brand-nav li {
 }
 
 .pict-container img {
-	width: 245px;
+	width: calc(245vw / var(--resizer) * 100);
 }
 .big {
 	font-size: 36px;
