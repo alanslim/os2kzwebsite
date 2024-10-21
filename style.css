@@ -474,8 +474,8 @@ margin: 0 auto;
 .box {
 	display: flex;
 	background: linear-gradient(180deg, rgba(43,223,13,1) 13%, rgba(12,62,3,1) 100%);
-	width: calc(265vw/var(--resizer) * 100);
-	height: calc(195vw/var(--resizer) * 100);
+	width: calc(200vw/var(--resizer) * 100);
+	height: calc(160vw/var(--resizer) * 100);
 	margin: 10px 0px;
 	align-items: center;
 	border-radius: 8%;
