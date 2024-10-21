@@ -460,7 +460,7 @@ margin: 0 auto;
 
 .boxy {
 	display: flex;
-	height: 500px;
+	height: calc(500vw/var(--resizer) * 100);
 	justify-content: flex-end;
     align-items: center;
     margin-top: 5%	;
