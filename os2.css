@@ -605,7 +605,7 @@ div.fx > .icons li a:hover {
 
 
 h1 {
-	font-size: 3.0rem;
+	font-size: calc((48vw*var(--resizer))/100)
 }
 
 .cont {
@@ -1064,6 +1064,11 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 
 
 @media(max-width: 768px) {
+
+
+	.bigtext {
+		height: 100%;
+	}
 
 	.cs {
 		justify-content: center;
