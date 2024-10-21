@@ -605,7 +605,7 @@ div.fx > .icons li a:hover {
 
 
 h1 {
-	font-size: calc((48vw*var(--resizer))/100)
+	font-size: calc(48vw/var(--resizer) * 100)
 }
 
 .cont {
@@ -710,7 +710,7 @@ h1 {
 
 
 .nav li {
-	font-weight: bold;
+
     color: #777;
     margin-left: 20px;
     padding: 10px;
