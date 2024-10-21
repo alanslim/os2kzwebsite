@@ -456,6 +456,40 @@ footer {
 }
 
 
+.brands {
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+}
+
+.brands__item img {
+	width: 50%;
+    height: 50%;
+}
+
+.brands__item {
+	padding: calc(10vw / var(--resizer)* 100);
+    border: calc(1vw / var(--resizer)* 100) solid #E5E6E8;
+    border-radius: calc(8vw / var(--resizer)* 100);
+	flex-basis: 25%;
+    height: 200px;
+    gap: 5px;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+
+}
+
+.brands a {
+	flex-basis: 25%;
+}
+
+.brands a:hover {
+	scale: 1.1;
+	transition: 0.5s;
+}
+
 
 
 
@@ -1092,6 +1126,10 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 }
 
 @media screen and (max-width: 600px) {
+
+	.brands__item {
+		flex-basis: 100%;
+	}
 
 .basis__header {
 	flex-basis: 100%;
