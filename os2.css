@@ -1000,7 +1000,7 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 
 @media(min-width: 1000px){
 	#bigtext {
-		height: calc(680vw / var(--resizer) * 100);
+		height: calc(662vw / var(--resizer) * 100);
 	}
 }
 
