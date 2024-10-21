@@ -605,7 +605,7 @@ div.fx > .icons li a:hover {
 
 
 h1 {
-	font-size: calc(48vw/var(--resizer) * 100)
+	font-size: calc(35vw/var(--resizer) * 100)
 }
 
 .cont {
