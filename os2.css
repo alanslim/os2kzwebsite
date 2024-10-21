@@ -1131,6 +1131,11 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 		flex-basis: 100%;
 	}
 
+
+	.brands a {
+		flex-basis: 100%;
+	}
+
 .basis__header {
 	flex-basis: 100%;
 }
