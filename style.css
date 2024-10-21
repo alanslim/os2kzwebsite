@@ -207,9 +207,8 @@ div .boxter > a:nth-child(4) .box {
 }
 
 .imgsize {
-	height: 78%;
-    width: 87%;
-    margin-left: 3px;
+	height: 100%;
+    width: 100%;
 }
 
 .bgrwh {
@@ -908,15 +907,47 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 }
 
 
+.boxy {
+	height: 325px;
+}
+
+
 .bgr {
 	background-size: 200%;
 }
+
+.box {
+	
+	width: 147px;
+	height: 143px;
+
+
+}
+
 
 }
 
 @media(max-width: 500px){
 
+	.box__img{
+		flex-basis: 67%;
+		height: 100%;
+	}
 
+	.box__text{
+		flex-basis: 30%;
+	}
+
+	.boxy {
+		height: 500px;
+	}
+
+.box {
+	width: 100%;
+}
+	.box p {
+		font-size: 16px;
+	}
 
 	#closeBtn {
 	margin-left: 12px;
