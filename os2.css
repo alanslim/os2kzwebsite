@@ -122,7 +122,7 @@ header {
 
 #bigtext {
   background-image: url("img/truck.png");
-  background-size: cover;
+  background-size: 100% 100%;
 
   display: flex;
   align-items: center;
@@ -618,7 +618,7 @@ h1 {
 }
 
 .bigtext {
-	height: calc(665vw / var(--resizer) * 100);
+	height: calc(500vw / var(--resizer) * 100);
 }
 
 .tr {
@@ -1000,7 +1000,7 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 
 @media(min-width: 1000px){
 	#bigtext {
-		height: calc(850vw / var(--resizer) * 100);
+		height: calc(680vw / var(--resizer) * 100);
 	}
 }
 
