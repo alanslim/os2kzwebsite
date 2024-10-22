@@ -485,9 +485,10 @@ footer {
 	flex-basis: 25%;
 }
 
-.brands a:hover {
-	scale: 1.1;
+.brands a:hover > div {
 	transition: 0.5s;
+	border-color: #00ff11f8;
+	border-width: 5px;
 }
 
 
