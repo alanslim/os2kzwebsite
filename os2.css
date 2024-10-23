@@ -72,7 +72,63 @@ footer {
   .footer-design a:hover {
 	color: #007BFF; /* Цвет текста при наведении */
   }
+  .slides__block{
+	height: 90%;
+	width: 200px;
+    background-color: #fff;
+    border: calc(1vw / var(--resizer)* 100) solid #ccc;
+    border-radius: calc(10vw / var(--resizer)* 100);
+    box-shadow: 0 calc(2vw / var(--resizer)* 100) calc(5vw / var(--resizer)* 100) rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+	align-items: center;
+	display: flex;
+  }
+  .slides__img{
+    padding: calc(10vw / var(--resizer)* 100);
+	text-align: center;
+  }
+
+  .slides__img img {
+	width: 100%
+  }
+  .slides__text{
+    padding: calc(4vw / var(--resizer)* 100);
+    text-align: center;
+}
   
+  .swiper-wrapper {
+    display: flex;
+
+
+}
+
+.swiper {
+	padding: calc(10vw / var(--resizer)* 100);
+	height: calc(200vw / var(--resizer)* 100);
+	width: calc(514vw / var(--resizer)* 100);
+    border-radius: calc(8vw / var(--resizer)* 100);
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+  .swiper-slide {
+	display: flex;
+    text-decoration: none;
+    color: inherit;
+  }
+
 
 
 .pict-container {
@@ -131,6 +187,8 @@ header {
 }
 
 .bigtext {
+	display: flex;
+    flex-wrap: wrap;
 
   color: white;
   width: 100%;
@@ -652,9 +710,7 @@ h1 {
 	color: white;
 }
 
-.bigtext {
-	height: calc(500vw / var(--resizer) * 100);
-}
+
 
 .tr {
 	width: 50%;
@@ -905,7 +961,27 @@ ul.brand-nav li {
 .urn h1 {
 	color: green;
 }
+@media (max-width: 767px) {
+    .swiper-wrapper {
+        flex-direction: column; /* Вертикальное направление слайдов */
+        animation: scroll-vertical 20s linear infinite; /* Вертикальная анимация */
+    }
 
+    @keyframes scroll-vertical {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-100%);
+        }
+    }
+
+    .swiper-slide {
+        height: 33.33%; /* Высота слайда для отображения 3 слайдов на экране */
+        width: 100%; /* Ширина слайда на всю ширину экрана */
+        flex-shrink: 0;
+    }
+}
 @keyframes lg {
 	0% {filter: opacity(0%); transform: scale(0);}
 	50% {filter: opacity(50%); transform: scale(0.5);}
@@ -1099,6 +1175,10 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 
 
 @media(max-width: 768px) {
+
+	.swiper {
+		display: none!important;
+	}
 
 
 	.bigtext {
