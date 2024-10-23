@@ -715,7 +715,7 @@ h1 {
 .tr {
 	width: 50%;
 	margin: auto;
-	margin-top: calc(220vw/var(--resizer)*100);
+	padding: calc(100vw / var(--resizer)* 100);
 	display: flex;
 	flex-wrap: wrap;
 }
