@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper', {
     loopedSlides: 8,
     speed: 3000, // Устанавливаем скорость анимации
    
-    allowTouchMove: false, // Отключаем возможность перетаскивания
+    allowTouchMove: true, // Отключаем возможность перетаскивания
     autoplay: {
         delay: 0, // Плавное движение без остановок
         disableOnInteraction: true,
@@ -22,9 +22,15 @@ const swiper = new Swiper('.swiper', {
         0: {
             direction: 'vertical',
             slidesPerView: '1',
+            allowTouchMove: true,
          
         },
         768: {
+            direction: 'horizontal',
+            centeredSlides: true,
+            allowTouchMove: true,
+        },
+        769: {
             direction: 'horizontal',
             centeredSlides: true,
         }
@@ -38,3 +44,11 @@ swiperContainer.addEventListener('mouseenter', () => {
 swiperContainer.addEventListener('mouseleave', () => {
     swiper.autoplay.start(); // Возобновляем автопрокрутку при убирании мыши
 });
+
+
+swiper.on('touchEnd', () => {
+    setTimeout(()=> {
+        swiper.autoplay.start();
+
+    }, 3000);
+})
