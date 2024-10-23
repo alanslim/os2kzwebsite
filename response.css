@@ -21,6 +21,64 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .card__map {
+    width: 100%;
+  }
+
+  .block {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .block__text p {
+    font-size: 18px;
+  }
+
+  .block__row {
+    display: none;
+  }
+
+  .block__text h2 {
+    font-size: 24px;
+  }
+
+  .block__row__mobi {
+    display: flex;
+    gap: 70px;
+  }
+
+
+  .block__img {
+    flex-basis: 100%;
+  }
+  
+  .block__text {
+    flex-basis: 100%;
+  }
+  .slides__block {
+    width: 100%;
+  }
+
+  .swiper {
+    height: 150px;
+    width: 150px;
+  }
+
+
+  .nav__os2 {
+        top: 68px!important;
+        text-align: center;
+        background-color: white;
+        border-radius: 8px;
+        width: 100%;
+  }
+  .os2__nav a {
+    width: 25%;
+}
+    .tr {
+      width: 100%;
+    }
   .harvest-slider-h2 {
     margin-bottom: 0px !important;
   }
@@ -74,7 +132,6 @@
     margin: 0 auto;
     padding: 20px 14px;
     max-width: 100%;
-    border-radius: 93px;
   }
 
   header nav ul {
@@ -111,7 +168,7 @@
   }
   header.active nav .burger {
     width: 45px;
-    height: 45px;
+    height: 15px;
     background: url("assets/img/close.png") center / contain no-repeat;
   }
 

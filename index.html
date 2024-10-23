@@ -15,6 +15,7 @@
     <link href="bootstrap.min.css" rel="stylesheet" />
     <link href="https://os2.kz/" rel="canonical" />
     <link rel="stylesheet" type="text/css" href="os2.css" />
+    <link rel="stylesheet" type="text/css" href="response.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -51,6 +52,10 @@
       };
     </script>
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Open Sans"
       rel="stylesheet"
     />
@@ -69,35 +74,28 @@
       <div class="container">
         <div class="row">
           <div class="cs">
-            
             <div class="row align-items-center basis__header">
-              <div class="logo col-md-3 col" id="logos">
-                <a class="col" href="index.html"
-                  ><img src="img/logopng.png" style="width: 45%"
+              <nav class="navbar navbar-light bg-light nav-harvest os2__nav">
+                <a href="index.html" class="logo__os2"
+                  ><img src="img/logopng.png"
                 /></a>
-              </div>
-              <div class="burger" id="OnOff">
-                <i class="fa-solid fa-bars" id="Mac"></i>
-                <i class="fa-solid fa-xmark" id="Nikita"></i>
-              </div>
-              <div
-                class="men d-flex align-items-center col-md-9 col h-100"
-                id="Erden"
-              >
-                <ul class="nav">
+                <ul class="nav__os2">
                   <li class="bgrl">
                     <a href="#bigtext">Домашняя страница</a>
                   </li>
-                  <li><a href="#marks">Бренды</a></li>
 
                   <li><a href="#bouts">О нас</a></li>
 
                   <li><a href="#maps">Контакты</a></li>
+                  <li><a href="engIndex.html">ENG</a></li>
+                  <li><a href="index.html">RUS</a></li>
                 </ul>
-              </div>
-            </div>
-            <div class="lang">
-              <a href="engIndex.html">ENG</a><a href="index.html">RUS</a>
+                <button
+                  type="button"
+                  class="burger"
+                  aria-label="burger"
+                ></button>
+              </nav>
             </div>
           </div>
         </div>
@@ -112,134 +110,167 @@
               <div class="tr">
                 <h1>КАЧЕСТВЕННАЯ ПРОДУКЦИЯ РАЗЛИЧНЫХ БРЕНДОВ ИЗ ТУРЦИИ</h1>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="marks" class="mt-5 jsblock">
-        <div class="container">
-          <div class="row">
-            <div class="uptext mb-5">
-              <h2>Наши Бренды:</h2>
-              <div class="bgrn"></div>
-            </div>
-            <div class="brands d-flex specstyle">
-              <a href="/pinar.html">
-              <div class="brands__item">
-                <img src="img/logo.png" alt="Pinar logo">
-              </div>
-            </a>
-            <a href="/tamek">
-              <div class="brands__item">
-                <img src="img/tamek.png" alt="Tamek logo">
-              </div>
-            </a>
-            <a href="os2.kz">
-              <div class="brands__item">
-                <img src="img/mutlulogo.png" alt="Mutlukal logo">
-              </div>
-            </a>
-            <a href="/goldharvest.html">
-              <div class="brands__item">
-                <img src="img/goldharvest.webp" alt="Gold Harvest logo">
-              </div>
-            </a>
-            <a>
-              <div class="brands__item">
-                <img src="img/iole.webp" alt="Iole logo">
-              </div>
-            </a>
-            <a>
-              <div class="brands__item">
-                <img src="img/cizmeci.webp" alt="Cizmeci time logo">
-              </div>
-            </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="sli" id="bouts">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-md-12 stars">
-              <span class="glyphicon glyphicon-star"
-                ><i class="fa-solid fa-star"></i
-              ></span>
-              <span class="glyphicon glyphicon-star"
-                ><i class="fa-solid fa-star"></i
-              ></span>
-              <span class="glyphicon glyphicon-star big"
-                ><i class="fa-solid fa-star"></i
-              ></span>
-              <span class="glyphicon glyphicon-star"
-                ><i class="fa-solid fa-star"></i
-              ></span>
-              <span class="glyphicon glyphicon-star"
-                ><i class="fa-solid fa-star"></i
-              ></span>
-            </div>
-            <div class="col d-flex justify-content-center">
-              <div
-                id="carouselExampleDark"
-                class="carousel carousel-dark slide flex-wrap text-center"
-              >
-                <div class="carousel-inner w-75 row mx-auto text-center">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <p class="review">
-                      Компания OS2 является официальным дистрибьютором известных
-                      Турецких брендов в Казахстане и Кыргызстане.
-                    </p>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="/pinar.html">
+                      <div class="slides__block">
+                        <div class="slides__img">
+                          <img src="img/logo.png" alt="Pinar logo" />
+                        </div>
+                      </div>
+                    </a>
                   </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <p class="review">
-                      Осуществляет продажи в крупных городах и регионах, имея
-                      собственный склад и дистрибьюторскую сеть.
-                    </p>
+                  <div class="swiper-slide">
+                    <a href="/tamek">
+                      <div class="slides__block">
+                        <div class="slides__img">
+                          <img src="img/tamek.png" alt="Tamek logo" />
+                        </div>
+                      </div>
+                    </a>
                   </div>
-                  <div class="carousel-item">
-                    <p class="review">
-                      Мы работаем с такими именитыми брендами как "Pinar",
-                      "TAMEK" и "Mutlukal Tortillas".
-                    </p>
+                  <div class="swiper-slide">
+                    <a href="os2.kz">
+                      <div class="slides__block">
+                        <div class="slides__img">
+                          <img src="img/mutlulogo.png" alt="Mutlukal logo" />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="/goldharvest.html">
+                      <div class="slides__block">
+                        <div class="slides__img">
+                          <img
+                            src="img/goldharvest.webp"
+                            alt="Gold Harvest logo"
+                          />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a>
+                      <div class="slides__block">
+                        <div class="slides__img">
+                          <img src="img/iole.webp" alt="Iole logo" />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a>
+                      <div class="slides__block">
+                        <div class="slides__img">
+                          <img src="img/cizmeci.webp" alt="Cizmeci time logo" />
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleDark"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleDark"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="sli" id="bouts">
+        <div class="container">
+          <div class="block__row">
+          <div class="block">
+            <div class="block__text">
+              <h2 >
+                <span>Компания OS2</span> является официальным дистрибьютором известных
+                Турецких брендов в Казахстане и Кыргызстане.
+              </h2>
+              <p>Мы поставляем товар известных турецких брендов во множество известных супермаркетов, среди наших клиентов есть такие гиганты индустрии как "Magnum", "Small" и другие магазины по всему Казахстану и Кыргызстану.</p>
+            </div>
+
+            <div class="block__img">
+              <img src="img/logistic.png" />
+            </div>
+          </div>
+          <div class="block">
+            <div class="block__img">
+              <img src="img/storage.png" />
+            </div>
+
+            <div class="block__text">
+              <h2 >
+                <span>Осуществляет продажи</span> в крупных городах и регионах, имея
+                собственный склад и дистрибьюторскую сеть.
+              </h2>
+              <p>Мы владеем крупным складом, откуда производим поставки по всему Казахстану и Кыргызыстану</p>
+            </div>
+          </div>
+          <div class="block">
+            <div class="block__text">
+              <h2 >
+                <span>Мы работаем</span> с такими именитыми брендами как "Pinar", "TAMEK" и
+                "Mutlukal Tortillas".
+              </h2>
+              <p>Среди брендов с которыми мы работаем - одни из лидеров Турецкого сегмента пищевой индустрии, настоящие гиганты. Продукция такого качества не имеет аналогов в Средней Азии. Мы расширяемся, и количество брендов с которыми мы работаем растет.</p>
+            </div>
+            <div class="block__img">
+              <img src="img/pinar_uretim.png" />
+            </div>
+          </div>
+        </div>
+        <div class="block__row__mobi">
+          <div class="block">
+            <div class="block__text">
+              <h2 >
+                <span>Компания OS2</span> является официальным дистрибьютором известных
+                Турецких брендов в Казахстане и Кыргызстане.
+              </h2>
+              <p>Мы поставляем товар известных турецких брендов во множество известных супермаркетов, среди наших клиентов есть такие гиганты индустрии как "Magnum", "Small" и другие магазины по всему Казахстану и Кыргызстану.</p>
+            </div>
+
+            <div class="block__img">
+              <img src="img/logistic.png" />
+            </div>
+          </div>
+          <div class="block">
+           
+
+            <div class="block__text">
+              <h2 >
+                <span>Осуществляет продажи</span> в крупных городах и регионах, имея
+                собственный склад и дистрибьюторскую сеть.
+              </h2>
+              <p>Мы владеем крупным складом, откуда производим поставки по всему Казахстану и Кыргызыстану</p>
+            </div>
+            <div class="block__img">
+              <img src="img/storage.png" />
+            </div>
+          </div>
+          <div class="block">
+            <div class="block__text">
+              <h2 >
+                <span>Мы работаем</span> с такими именитыми брендами как "Pinar", "TAMEK" и
+                "Mutlukal Tortillas".
+              </h2>
+              <p>Среди брендов с которыми мы работаем - одни из лидеров Турецкого сегмента пищевой индустрии, настоящие гиганты. Продукция такого качества не имеет аналогов в Средней Азии. Мы расширяемся, и количество брендов с которыми мы работаем растет.</p>
+            </div>
+            <div class="block__img">
+              <img src="img/pinar_uretim.png" />
+            </div>
+          </div>
+        </div>
+
+         
         </div>
       </section>
       <section class="map mt-5 mb-5" id="maps">
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-center">
             <div class="hdr text-center mb-3">
               <h2>Контакты:</h2>
               <div class="bgrn"></div>
             </div>
-            <div class="card">
+            <div class="card card__map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d560.3688678691332!2d76.92236873288105!3d43.269118305979895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836c0194d6adbf%3A0x2678565385295143!2z0L_RgNC-0YHQv9C10LrRgiDQoNCw0LnRi9C80LHQtdC60LAgMjE3LCDQkNC70LzQsNGC0YsgMDUwMDE2!5e0!3m2!1sru!2skz!4v1675508802935!5m2!1sru!2skz"
                 width="600"
@@ -278,9 +309,7 @@
             </div>
             <div class="copyright"><p>OS2 group almaty</p></div>
           </div>
-          <div class="col-sm-4 bran mt-2">
-       
-          </div>
+          <div class="col-sm-4 bran mt-2"></div>
           <div class="ftrright col-sm-4">
             <p>
               Design by
@@ -293,6 +322,9 @@
       </div>
     </footer>
     <script defer src="scroll.js"></script>
+    <script type="module" src="/assets/script/swiper_os2.js"></script>
+    <script defer src="index.js"></script>
+    <script defer src="fadeIn.js"></script>
     <script defer src="changeclass.js"></script>
     <script defer src="scrolling.js"></script>
     <script defer src="anim.js"></script>

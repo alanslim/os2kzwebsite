@@ -74,7 +74,7 @@ footer {
   }
   .slides__block{
 	height: 90%;
-	width: 200px;
+	width: calc(162vw/var(--resizer) * 100);
     background-color: #fff;
     border: calc(1vw / var(--resizer)* 100) solid #ccc;
     border-radius: calc(10vw / var(--resizer)* 100);
@@ -110,6 +110,7 @@ footer {
     border-radius: calc(8vw / var(--resizer)* 100);
     margin: 0 auto;
     justify-content: space-between;
+	margin-bottom: calc(15vw/var(--resizer) * 100);
 }
 
 
@@ -200,10 +201,19 @@ header {
   animation: fadein 2s;
 }
 
-@keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@keyframes fadeIn {
+	0%{opacity: 0;}
+
+	100%{opacity: 1;}
 }
+
+
+
+
+.os2__nav {
+	background-color: inherit!important;
+}
+
 
 body {
 	background-color: #D4F1D6;
@@ -710,20 +720,46 @@ h1 {
 	color: white;
 }
 
+.nav__os2{
+	
+		display: flex;
+		justify-content: space-evenly;
+		width: 60%;
+		margin-bottom: 0!important;
+
+}
+
+
+
+.os2__nav a {
+	width: 10%;
+}
 
 
 .tr {
-	width: 50%;
+	width: 100%;
 	margin: auto;
-	padding: calc(100vw / var(--resizer)* 100);
+	padding: calc(170vw / var(--resizer)* 100);
 	display: flex;
 	flex-wrap: wrap;
 }
 
+
+.block {
+	display: flex;
+}
+
+
 .logo {
 	display: flex;
 	justify-content: center;
+}
+
+
+.logo__os2 img{
+	width: 100%;
 	animation: lg 300ms linear 400ms both;
+
 }
 
 
@@ -735,6 +771,8 @@ h1 {
 	margin-top: 200px!important;
 	margin-bottom: 200px;
 }
+
+
 
 
 .boxter a:hover p {
@@ -937,6 +975,64 @@ ul.brand-nav li {
 	font-size: 36px;
 }
 
+.block__row {
+	display: flex;
+	gap: 60px;
+	flex-direction: column;
+}
+
+.block__row__mobi {
+	display: none;
+	flex-direction: column;
+}
+
+.card__map {
+	width: 50%;
+}
+
+.block {
+	gap: 50px;
+}
+
+.block__img img {
+	width: 100%;
+}
+
+
+.block__text.show {
+	animation: 1s forwards 1s  fadeIn;
+}
+.block__img.show{
+	animation: 2s forwards 2s  fadeIn;
+	
+}
+
+.block__img {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	flex-basis: 49%;
+}
+
+.block__text {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	flex-basis: 49%;
+}
+.block__text h2 {
+	font-size: 31px;
+	color: #000;
+	font-weight: bold;
+}
+.block__text p {
+	font-size: 24px;
+	color: #000;
+}
+.block__text h2 > span {
+	color: green;
+}
+
+
+
 .author {
     font-size: 18px;
     font-weight: 900;
@@ -961,27 +1057,7 @@ ul.brand-nav li {
 .urn h1 {
 	color: green;
 }
-@media (max-width: 767px) {
-    .swiper-wrapper {
-        flex-direction: column; /* Вертикальное направление слайдов */
-        animation: scroll-vertical 20s linear infinite; /* Вертикальная анимация */
-    }
 
-    @keyframes scroll-vertical {
-        from {
-            transform: translateY(0);
-        }
-        to {
-            transform: translateY(-100%);
-        }
-    }
-
-    .swiper-slide {
-        height: 33.33%; /* Высота слайда для отображения 3 слайдов на экране */
-        width: 100%; /* Ширина слайда на всю ширину экрана */
-        flex-shrink: 0;
-    }
-}
 @keyframes lg {
 	0% {filter: opacity(0%); transform: scale(0);}
 	50% {filter: opacity(50%); transform: scale(0.5);}
@@ -1176,9 +1252,6 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 
 @media(max-width: 768px) {
 
-	.swiper {
-		display: none!important;
-	}
 
 
 	.bigtext {

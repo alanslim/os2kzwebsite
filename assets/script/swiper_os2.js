@@ -12,7 +12,7 @@ const swiper = new Swiper('.swiper', {
     allowTouchMove: false, // Отключаем возможность перетаскивания
     autoplay: {
         delay: 0, // Плавное движение без остановок
-        disableOnInteraction: false,
+        disableOnInteraction: true,
     },
     freeMode: true, // Включаем режим свободного скольжения
     freeModeMomentum: false, // Отключаем инерцию при остановке
@@ -21,6 +21,7 @@ const swiper = new Swiper('.swiper', {
     breakpoints: {
         0: {
             direction: 'vertical',
+            slidesPerView: '1',
          
         },
         768: {
@@ -28,4 +29,12 @@ const swiper = new Swiper('.swiper', {
             centeredSlides: true,
         }
     }
+});
+const swiperContainer = document.querySelector('.swiper');
+swiperContainer.addEventListener('mouseenter', () => {
+    swiper.autoplay.stop(); // Останавливаем автопрокрутку при наведении
+});
+
+swiperContainer.addEventListener('mouseleave', () => {
+    swiper.autoplay.start(); // Возобновляем автопрокрутку при убирании мыши
 });
