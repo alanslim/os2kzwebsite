@@ -59,9 +59,9 @@
 
 
   .nav__os2 {
-        top: 68px!important;
+        top: 80px!important;
         text-align: center;
-        background-color: white;
+        background-color: #f0f8ff;
         border-radius: 8px;
         width: 100%;
   }
@@ -223,7 +223,7 @@
   .nav__os2 {
         top: 68px!important;
         text-align: center;
-        background-color: white;
+        background-color: #f0f8ff;
         border-radius: 8px;
         width: 100%;
   }
