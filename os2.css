@@ -849,6 +849,7 @@ h1 {
     border: 2px solid rgb(36 182 40);
     color: #24b628;
     background-color: transparent;
+	padding: 5px;
 }
 
 .infa {
