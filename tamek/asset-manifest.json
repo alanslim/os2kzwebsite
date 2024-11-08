@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/tamek/static/css/main.7d0503bd.css",
-    "main.js": "/tamek/static/js/main.9bd77a5c.js",
+    "main.js": "/tamek/static/js/main.ec65af20.js",
     "static/js/787.8a7ff9b8.chunk.js": "/tamek/static/js/787.8a7ff9b8.chunk.js",
     "static/media/bgr.jpg": "/tamek/static/media/bgr.d2d6071bc9073ef5bff5.jpg",
     "static/media/bgrforitems.jpg": "/tamek/static/media/bgrforitems.bcee71fb28a825aa4985.jpg",
     "index.html": "/tamek/index.html",
     "main.7d0503bd.css.map": "/tamek/static/css/main.7d0503bd.css.map",
-    "main.9bd77a5c.js.map": "/tamek/static/js/main.9bd77a5c.js.map",
+    "main.ec65af20.js.map": "/tamek/static/js/main.ec65af20.js.map",
     "787.8a7ff9b8.chunk.js.map": "/tamek/static/js/787.8a7ff9b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7d0503bd.css",
-    "static/js/main.9bd77a5c.js"
+    "static/js/main.ec65af20.js"
   ]
 }
