@@ -344,7 +344,7 @@ div .boxter > a:nth-child(4) .box {
 
 .boxx{
 	flex-wrap: wrap;
-	height: calc(245vw / var(--resizer) * 100);
+	height: calc(136vw / var(--resizer) * 100);
 	width: 27%;
 	position: relative;
 	overflow: hidden;
