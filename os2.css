@@ -73,6 +73,7 @@ footer {
 	color: #007BFF; /* Цвет текста при наведении */
   }
   .slides__block{
+	justify-content: center;
 	height: 90%;
 	width: calc(162vw/var(--resizer) * 100);
     background-color: #fff;
