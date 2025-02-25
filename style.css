@@ -1081,3 +1081,10 @@ ul.nav > li:hover ul.sub-menu {position: relative;}
 .fx {justify-content: flex-start; width: 425px;};
 
 }
+
+@media screen and (max-width: 768px) {
+	.boxx {
+	  height: 150px;
+	}
+
+}
