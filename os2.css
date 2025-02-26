@@ -17,9 +17,63 @@
 	--resizer: 1440;
   }
 
+
+  .flex {
+	display: flex;
+  }
+
+.iole__main {
+	min-height: 1000px;
+	padding: 200px;
+}
+
+.container__iole {
+	width: 48%;
+}
+
+
+.container__iole__main {
+	background-color: wheat;
+	padding: 50px;
+}
+
+.iole {
+	background-color: antiquewhite;
+  
+}
+
+.iole-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.iole-table th, .iole-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.iole-table th {
+
+  font-weight: bold;
+}
+
+.iole-table td:first-child {
+  font-weight: bold;
+  width: 30%;
+}
+
+
+
+.container__iole__img {
+	width: 100%;
+}
 .basis__header {
 	flex-basis: 87%;
 }
+
+
 
 .flexible {
 	display: flex;
