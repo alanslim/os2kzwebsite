@@ -138,6 +138,19 @@ footer {
     transition: transform 0.3s, box-shadow 0.3s;
 	align-items: center;
 	display: flex;
+	opacity: 1;
+
+	
+  }
+
+  .slides__block:hover {
+	opacity: 0.9;
+  }
+
+
+  .slides__block:hover img{
+	scale: 1.1;
+	
   }
   .slides__img{
     padding: calc(10vw / var(--resizer)* 100);
