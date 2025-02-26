@@ -1055,6 +1055,35 @@ ul.brand-nav li {
 	flex-direction: column;
 }
 
+.iole-h1 {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+.iole-text {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+
+
+.iole-img {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+.iole-h1.show {
+	animation: 1s forwards 1s  fadeIn;
+}
+.iole-text.show{
+	animation: 2s forwards 2s  fadeIn;
+	
+}
+
+.iole-img.show{
+	animation: 500ms forwards 500ms  fadeIn;
+	
+}
+
 .card__map {
 	width: 50%;
 }
