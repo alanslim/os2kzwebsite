@@ -1349,7 +1349,32 @@ ul.nav li > ul.sub-menu li:nth-child(10) {animation: birds 400ms linear 1200ms b
 
 
 @media(max-width: 768px) {
+	.iole-table th, .iole-table td {
+		border: 1px solid #ddd;
+		padding: 2px;
+		text-align: left;
+	}
 
+	.iole-table {
+		width: 100%;
+		overflow: auto;
+		border-spacing: 0 calc(10vw / var(--resizer) * 100);
+		margin: calc(30vw / var(--resizer) * 100) 0;
+	  }
+
+	.container__iole {
+		width: 100%;
+	}
+	.container__iole__main {
+		padding: 20px;
+		flex-wrap: wrap;
+	}
+
+
+
+	.iole__main {
+		padding: 0px;
+	}
 
 
 	.bigtext {
